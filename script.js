@@ -17,7 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
             submitBtn.textContent = 'Analyzing...';
 
-            const response = await fetch('http://localhost:3000/upload', {
+            const response = await fetch('https://dietchartgrocery-be.onrender.com/upload', {
                 method: 'POST',
                 body: formData,
                 headers: {
